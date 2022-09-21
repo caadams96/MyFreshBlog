@@ -45,7 +45,7 @@ export default function Home(ctx: PageProps<Data>) {
                 width="45"
                 height="45"
                 src="/github.png"
-                alt="Explore diKnow on GitHub"
+                alt="Explore My GitHub"
             />
         </a>
     </div>

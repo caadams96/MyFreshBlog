@@ -8,7 +8,8 @@ export function MysteryBox(props: JSX.HTMLAttributes<HTMLButtonElement>) {
             {...props}
             disabled={!IS_BROWSER || props.disabled}
             class="MysteryBox h-24 w-23 "
-        ><img src="MarioBlock.svg"/>
+
+        ><img src="MarioBlock.svg" alt="MysteryBox"/>
         </button>
     );
 }

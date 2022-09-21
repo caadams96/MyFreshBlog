@@ -39,6 +39,15 @@ export default function Home(ctx: PageProps<Data>) {
         <br/>
         </div>
       <Counter start={3} />
+        <a href="https://github.com/caadams96/" target="_blank">
+            <img
+                className="fixed z-10 md:(bottom-5 right-5) bottom-2 right-2 animate-bounce"
+                width="45"
+                height="45"
+                src="/github.png"
+                alt="Explore diKnow on GitHub"
+            />
+        </a>
     </div>
   );
 }

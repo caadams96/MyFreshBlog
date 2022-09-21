@@ -1,6 +1,8 @@
 import Counter from "../islands/Counter.tsx";
 import {HeadElement} from "../components/HeadElement.tsx";
 import {Header} from "../components/Header.tsx";
+import {MysteryBox} from "../components/MysteryBox.tsx";
+import RandomNumberGenerator from "../islands/RandomNumberGenerator.tsx";
 
 export default function Home(ctx: PageProps<Data>) {
     const { data, url } = ctx;
@@ -15,15 +17,27 @@ export default function Home(ctx: PageProps<Data>) {
         <Header
             title="Home"
         />
-      <img
-        src="/logo.svg"
-        class="w-32 h-32"
-        alt="the fresh logo: a sliced lemon dripping with juice"
-      />
-      <p class="my-6">
-        Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-        file, and refresh.
-      </p>
+        <br/>
+      {/*<img*/}
+      {/*  src="/logo.svg"*/}
+      {/*  class="w-32 h-32"*/}
+      {/*  alt="the fresh logo: a sliced lemon dripping with juice"*/}
+      {/*/>*/}
+      {/*<p class="my-6">*/}
+      {/*  Welcome to `fresh`. Try updating this message in the ./routes/index.tsx*/}
+      {/*  file, and refresh.*/}
+      {/*</p>*/}
+        <div>
+        <h1>
+            Press the Mystery Box
+            <br/>
+            See what happens!
+        </h1>
+
+        <br/>
+        <RandomNumberGenerator upper={50} lower={1}></RandomNumberGenerator>
+        <br/>
+        </div>
       <Counter start={3} />
     </div>
   );

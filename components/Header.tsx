@@ -1,6 +1,11 @@
 // import Cart from "../islands/Cart.tsx";
+import {Header} from "$fresh/runtime.ts";
 
-export function Header() {
+export type HeaderProps = {
+    title: string;
+
+}
+export function Header({title}:HeaderProps) {
     return (
         <header
             class="h-[110px] sm:!h-[144px] w-full bg-cover bg-no-repeat relative"
@@ -20,7 +25,7 @@ export function Header() {
                     class="h-14 w-14"
                   />
                 </a>
-                <h1 class="text-white   ">My Blog</h1>
+                <h1 class="text-white">{title}</h1>
                 <h1>
                     {/*<img*/}
                     {/*  src="/text_logo.svg"*/}
@@ -29,7 +34,6 @@ export function Header() {
                     {/*  width="130"*/}
                     {/*  height="24"*/}
                     {/*/>*/}
-                    My Blog
                 </h1>
             </nav>
         </header>

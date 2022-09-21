@@ -7,7 +7,7 @@ export default function AboutPage() {
     return (
 
         <div>
-            <Header />
+            <Header title="About"/>
         </div>
 
 
